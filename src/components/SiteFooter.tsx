@@ -1,54 +1,109 @@
 import { Link } from "@tanstack/react-router";
-import { Code2, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { company, whatsappLink } from "@/lib/site";
+import { useSourcing } from "./SourcingProvider";
 
 export function SiteFooter() {
+  const { open } = useSourcing();
+
   return (
-    <footer className="border-t border-border bg-secondary/50">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-              <Code2 className="h-5 w-5" />
+    <footer className="bg-primary text-primary-foreground">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5">
+        <div className="lg:col-span-2">
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-foreground font-display text-sm font-bold text-primary">
+              N
             </span>
-            <span className="font-display text-xl font-bold">
-              Spring<span className="text-primary">Path</span>
+            <span className="font-display text-[17px] font-bold leading-4">
+              NEX SOURCE
+              <span className="block text-[10px] font-semibold tracking-[0.28em] opacity-70">GLOBAL</span>
             </span>
           </div>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Java & Spring Framework seekho — simple bhasha me, real projects ke saath. Students, working professionals aur corporate teams ke liye.
+          <p className="mt-5 max-w-sm text-sm leading-relaxed opacity-80">
+            Global sourcing, procurement and supply-chain support for businesses building reliable supplier networks.
           </p>
+          <ul className="mt-6 space-y-2.5 text-sm opacity-85">
+            <li className="flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              <a href={`mailto:${company.email}`} className="hover:underline">
+                {company.email}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Phone className="h-4 w-4" />
+              <a href={`tel:${company.phoneRaw}`} className="hover:underline">
+                {company.phone}
+              </a>
+            </li>
+            <li className="flex gap-2">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+              <span>
+                {company.address.line1}, {company.address.line2}
+                <br />
+                {company.address.city}, {company.address.country}
+              </span>
+            </li>
+          </ul>
+          <p className="mt-4 text-sm opacity-85">Contact person: {company.contactPerson}</p>
         </div>
 
         <div>
-          <h4 className="text-sm font-bold uppercase tracking-wide text-foreground">Learn</h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            <li><Link to="/courses" className="hover:text-primary">All Courses</Link></li>
-            <li><Link to="/corporate" className="hover:text-primary">Corporate Training</Link></li>
-            <li><Link to="/success-stories" className="hover:text-primary">Success Stories</Link></li>
-            <li><Link to="/blog" className="hover:text-primary">Blog & Resources</Link></li>
+          <h4 className="text-xs font-bold uppercase tracking-[0.18em] opacity-70">Company</h4>
+          <ul className="mt-4 space-y-2.5 text-sm opacity-85">
+            <li><Link to="/about" className="hover:underline">About</Link></li>
+            <li><Link to="/how-we-work" className="hover:underline">How We Work</Link></li>
+            <li><Link to="/industries" className="hover:underline">Industries</Link></li>
+            <li><Link to="/blog" className="hover:underline">Insights</Link></li>
+            <li><Link to="/news" className="hover:underline">News</Link></li>
+            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-sm font-bold uppercase tracking-wide text-foreground">Company</h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            <li><Link to="/about" className="hover:text-primary">About Us</Link></li>
-            <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
-            <li><Link to="/courses" className="hover:text-primary">Free Demo Class</Link></li>
+          <h4 className="text-xs font-bold uppercase tracking-[0.18em] opacity-70">Services</h4>
+          <ul className="mt-4 space-y-2.5 text-sm opacity-85">
+            <li><Link to="/services" className="hover:underline">Global Sourcing</Link></li>
+            <li><Link to="/services" className="hover:underline">Supplier Evaluation</Link></li>
+            <li><Link to="/services" className="hover:underline">Procurement Support</Link></li>
+            <li><Link to="/services" className="hover:underline">Supplier Verification</Link></li>
+            <li><Link to="/services" className="hover:underline">Quality &amp; Inspection</Link></li>
+            <li><Link to="/services" className="hover:underline">Production Follow-Up</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-sm font-bold uppercase tracking-wide text-foreground">Reach Us</h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@springpath.in</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 98765 43210</li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Noida, India</li>
+          <h4 className="text-xs font-bold uppercase tracking-[0.18em] opacity-70">Get Started</h4>
+          <ul className="mt-4 space-y-2.5 text-sm opacity-85">
+            <li>
+              <button onClick={() => open("footer")} className="hover:underline">
+                Start a Sourcing Project
+              </button>
+            </li>
+            <li>
+              <button onClick={() => open("footer-quote")} className="hover:underline">
+                Request a Quote
+              </button>
+            </li>
+            <li>
+              <a
+                href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:underline"
+              >
+                <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+              </a>
+            </li>
+            <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © 2026 SpringPath Learning. Made with care for every learner.
+
+      <div className="border-t border-primary-foreground/15">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs opacity-70 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <p>© 2026 {company.name} All rights reserved.</p>
+          <p>Privacy Policy · Terms of Use · Cookie Policy</p>
+        </div>
       </div>
     </footer>
   );

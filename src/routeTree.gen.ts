@@ -13,9 +13,6 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CorporateRouteImport } from './routes/corporate'
-import { Route as CoursesRouteImport } from './routes/courses'
-import { Route as SuccessStoriesRouteImport } from './routes/success-stories'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -37,39 +34,18 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CorporateRoute = CorporateRouteImport.update({
-  id: '/corporate',
-  path: '/corporate',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CoursesRoute = CoursesRouteImport.update({
-  id: '/courses',
-  path: '/courses',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SuccessStoriesRoute = SuccessStoriesRouteImport.update({
-  id: '/success-stories',
-  path: '/success-stories',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
-  '/corporate': typeof CorporateRoute
-  '/courses': typeof CoursesRoute
-  '/success-stories': typeof SuccessStoriesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
-  '/corporate': typeof CorporateRoute
-  '/courses': typeof CoursesRoute
-  '/success-stories': typeof SuccessStoriesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -77,38 +53,13 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
-  '/corporate': typeof CorporateRoute
-  '/courses': typeof CoursesRoute
-  '/success-stories': typeof SuccessStoriesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/about'
-    | '/blog'
-    | '/contact'
-    | '/corporate'
-    | '/courses'
-    | '/success-stories'
+  fullPaths: '/' | '/about' | '/blog' | '/contact'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/about'
-    | '/blog'
-    | '/contact'
-    | '/corporate'
-    | '/courses'
-    | '/success-stories'
-  id:
-    | '__root__'
-    | '/'
-    | '/about'
-    | '/blog'
-    | '/contact'
-    | '/corporate'
-    | '/courses'
-    | '/success-stories'
+  to: '/' | '/about' | '/blog' | '/contact'
+  id: '__root__' | '/' | '/about' | '/blog' | '/contact'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -116,9 +67,6 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
-  CorporateRoute: typeof CorporateRoute
-  CoursesRoute: typeof CoursesRoute
-  SuccessStoriesRoute: typeof SuccessStoriesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -151,27 +99,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/corporate': {
-      id: '/corporate'
-      path: '/corporate'
-      fullPath: '/corporate'
-      preLoaderRoute: typeof CorporateRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/courses': {
-      id: '/courses'
-      path: '/courses'
-      fullPath: '/courses'
-      preLoaderRoute: typeof CoursesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/success-stories': {
-      id: '/success-stories'
-      path: '/success-stories'
-      fullPath: '/success-stories'
-      preLoaderRoute: typeof SuccessStoriesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -180,9 +107,6 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
-  CorporateRoute: CorporateRoute,
-  CoursesRoute: CoursesRoute,
-  SuccessStoriesRoute: SuccessStoriesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
