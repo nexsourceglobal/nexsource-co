@@ -79,11 +79,11 @@ export function SourcingModal({ sourcePage, onClose }: { sourcePage: string; onC
     e.preventDefault();
     if (form.bot) return;
     const next: Record<string, string> = {};
-    if (form.name.trim().length < 2) next.name = "Please enter your full name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) next.email = "Please enter a valid business email.";
-    if (form.phone.trim().length < 7) next.phone = "Please enter a reachable phone or WhatsApp number.";
-    if (form.product.trim().length < 2) next.product = "Tell us what you want to source.";
-    if (form.requirement.trim().length < 10) next.requirement = "A short requirement description helps us respond accurately.";
+    if (form.name.trim().length < 2) next["name"] = "Please enter your full name.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) next["email"] = "Please enter a valid business email.";
+    if (form.phone.trim().length < 7) next["phone"] = "Please enter a reachable phone or WhatsApp number.";
+    if (form.product.trim().length < 2) next["product"] = "Tell us what you want to source.";
+    if (form.requirement.trim().length < 10) next["requirement"] = "A short requirement description helps us respond accurately.";
     setErrors(next);
     if (Object.keys(next).length) return;
     setSent(true);
@@ -152,19 +152,19 @@ export function SourcingModal({ sourcePage, onClose }: { sourcePage: string; onC
             />
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <Field label="Full name *" error={errors.name}>
+              <Field label="Full name *" error={errors["name"]}>
                 <input ref={firstField} value={form.name} onChange={(e) => set("name", e.target.value)} maxLength={100} className={inputCls} />
               </Field>
               <Field label="Company name">
                 <input value={form.companyName} onChange={(e) => set("companyName", e.target.value)} maxLength={120} className={inputCls} />
               </Field>
-              <Field label="Business email *" error={errors.email}>
+              <Field label="Business email *" error={errors["email"]}>
                 <input type="email" value={form.email} onChange={(e) => set("email", e.target.value)} maxLength={160} className={inputCls} />
               </Field>
-              <Field label="Phone / WhatsApp *" error={errors.phone}>
+              <Field label="Phone / WhatsApp *" error={errors["phone"]}>
                 <input value={form.phone} onChange={(e) => set("phone", e.target.value)} maxLength={30} className={inputCls} />
               </Field>
-              <Field label="What do you want to source? *" error={errors.product}>
+              <Field label="What do you want to source? *" error={errors["product"]}>
                 <input value={form.product} onChange={(e) => set("product", e.target.value)} maxLength={120} className={inputCls} />
               </Field>
               <Field label="Quantity / estimated volume">
@@ -179,7 +179,7 @@ export function SourcingModal({ sourcePage, onClose }: { sourcePage: string; onC
             </div>
 
             <div className="mt-4">
-              <Field label="Brief product requirement *" error={errors.requirement}>
+              <Field label="Brief product requirement *" error={errors["requirement"]}>
                 <textarea
                   value={form.requirement}
                   onChange={(e) => set("requirement", e.target.value)}
@@ -245,7 +245,7 @@ export function SourcingModal({ sourcePage, onClose }: { sourcePage: string; onC
 const inputCls =
   "mt-1.5 w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-ring focus:ring-2 focus:ring-ring/30";
 
-function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function Field({ label, error, children }: { label: string; error?: string | undefined; children: React.ReactNode }) {
   return (
     <label className="block text-sm">
       <span className="font-semibold text-foreground">{label}</span>

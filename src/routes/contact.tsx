@@ -53,9 +53,9 @@ function Contact() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     const next: Record<string, string> = {};
-    if (form.name.trim().length < 2) next.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) next.email = "Please enter a valid email address.";
-    if (form.message.trim().length < 10) next.message = "Please add a few lines about your requirement.";
+    if (form.name.trim().length < 2) next["name"] = "Please enter your name.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) next["email"] = "Please enter a valid email address.";
+    if (form.message.trim().length < 10) next["message"] = "Please add a few lines about your requirement.";
     setErrors(next);
     if (Object.keys(next).length) return;
     setSent(true);
@@ -111,7 +111,7 @@ function Contact() {
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     className="mt-1.5 w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/30"
                   />
-                  {errors.name && <span className="mt-1 block text-xs text-destructive">{errors.name}</span>}
+                  {errors["name"] && <span className="mt-1 block text-xs text-destructive">{errors["name"]}</span>}
                 </label>
                 <label className="block text-sm">
                   <span className="font-semibold">Email *</span>
@@ -122,7 +122,7 @@ function Contact() {
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     className="mt-1.5 w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/30"
                   />
-                  {errors.email && <span className="mt-1 block text-xs text-destructive">{errors.email}</span>}
+                  {errors["email"] && <span className="mt-1 block text-xs text-destructive">{errors["email"]}</span>}
                 </label>
                 <label className="block text-sm sm:col-span-2">
                   <span className="font-semibold">Phone / WhatsApp</span>
@@ -142,7 +142,7 @@ function Contact() {
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     className="mt-1.5 w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/30"
                   />
-                  {errors.message && <span className="mt-1 block text-xs text-destructive">{errors.message}</span>}
+                  {errors["message"] && <span className="mt-1 block text-xs text-destructive">{errors["message"]}</span>}
                 </label>
               </div>
               <button type="submit" className="mt-6 w-full rounded-xl bg-primary px-6 py-3.5 font-semibold text-primary-foreground">
