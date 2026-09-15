@@ -25,6 +25,7 @@ jobs:
 
       - run: bun install
       - run: bun run build
+      - run: mkdir -p .output/public && touch .output/public/.nojekyll
 
       - uses: actions/configure-pages@v5
 
