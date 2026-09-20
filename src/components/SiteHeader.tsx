@@ -77,12 +77,12 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <button
-              onClick={() => openForm("navbar")}
-              className="hidden items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 lg:inline-flex"
-            >
-              Start a Sourcing Project <ArrowRight className="h-4 w-4" />
-            </button>
+          <button 
+  onClick={() => openForm("navbar")} 
+  className="hidden items-center gap-2 rounded-xl bg-[#D40000] px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000] lg:inline-flex"
+> 
+  Start a Sourcing Project <ArrowRight className="h-4 w-4" /> 
+</button>
             <button className="rounded-lg p-2 xl:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
               {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -103,15 +103,15 @@ export function SiteHeader() {
                 {l.label}
               </Link>
             ))}
-            <button
-              onClick={() => {
-                setOpen(false);
-                openForm("mobile-nav");
-              }}
-              className="mt-2 w-full rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
-            >
-              Start a Sourcing Project
-            </button>
+          <button
+  onClick={() => {
+    setOpen(false);
+    openForm("mobile-nav");
+  }}
+  className="mt-2 w-full rounded-xl bg-[#D40000] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#B00000]"
+>
+  Start a Sourcing Project
+</button>
           </nav>
         )}
       </header>
