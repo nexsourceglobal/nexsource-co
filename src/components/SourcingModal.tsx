@@ -100,8 +100,9 @@ export function SourcingModal({ sourcePage, onClose }: { sourcePage: string; onC
         <button
           onClick={onClose}
           aria-label="Close form"
-        className="absolute right-4 top-4 rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground" >
-        </button>  <X className="h-5 w-5" />
+          className="absolute right-4 top-4 rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+        >
+          <X className="h-5 w-5" />
         </button>
 
         {sent ? (
