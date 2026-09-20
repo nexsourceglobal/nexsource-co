@@ -20,8 +20,12 @@ export function SiteHeader() {
   const { open: openForm } = useSourcing();
 
   useEffect(() => {
-    if (open) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "";
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -33,14 +37,27 @@ export function SiteHeader() {
         <div className="bg-primary text-primary-foreground">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 text-xs sm:px-6">
             <p className="truncate">
-              Global sourcing support across Asia &amp; emerging manufacturing markets
-              <span className="hidden sm:inline"> • Talk to our sourcing team</span>
+              Global sourcing support across Asia &amp; emerging manufacturing
+              markets
+              <span className="hidden sm:inline">
+                {" "}
+                • Talk to our sourcing team
+              </span>
             </p>
+
             <div className="flex shrink-0 items-center gap-3">
-              <button onClick={() => openForm("announcement-bar")} className="font-semibold underline-offset-4 hover:underline">
+              <button
+                onClick={() => openForm("announcement-bar")}
+                className="font-semibold underline-offset-4 hover:underline"
+              >
                 Start a Conversation →
               </button>
-              <button onClick={() => setBar(false)} aria-label="Dismiss announcement" className="opacity-70 hover:opacity-100">
+
+              <button
+                onClick={() => setBar(false)}
+                aria-label="Dismiss announcement"
+                className="opacity-70 hover:opacity-100"
+              >
                 <X className="h-3.5 w-3.5" />
               </button>
             </div>
@@ -50,18 +67,21 @@ export function SiteHeader() {
 
       <header className="border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 sm:px-6">
-     <Link
-  to="/"
-  className="flex items-center gap-2.5"
-  aria-label="Nex Source Global home"
->
-  <img
-    src="/logo.png"
-    alt="Nex Source Global"
-    className="h-12 w-auto object-contain"
-  />
-</Link>
+          
+          {/* Company Logo */}
+          <Link
+            to="/"
+            className="flex items-center gap-2.5"
+            aria-label="Nex Source Global home"
+          >
+            <img
+              src="/logo.png"
+              alt="Nex Source Global"
+              className="h-12 w-auto object-contain"
+            />
+          </Link>
 
+          {/* Desktop Navigation */}
           <nav className="hidden items-center gap-0.5 xl:flex">
             {navLinks.map((l) => (
               <Link
@@ -76,19 +96,32 @@ export function SiteHeader() {
             ))}
           </nav>
 
+          {/* Header Buttons */}
           <div className="flex items-center gap-2">
             <button
               onClick={() => openForm("navbar")}
               className="hidden items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 lg:inline-flex"
             >
-              Start a Sourcing Project <ArrowRight className="h-4 w-4" />
+              Start a Sourcing Project
+              <ArrowRight className="h-4 w-4" />
             </button>
-            <button className="rounded-lg p-2 xl:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
-              {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+
+            <button
+              className="rounded-lg p-2 xl:hidden"
+              onClick={() => setOpen(!open)}
+              aria-label="Toggle menu"
+              aria-expanded={open}
+            >
+              {open ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
 
+        {/* Mobile Navigation */}
         {open && (
           <nav className="max-h-[70vh] overflow-y-auto border-t border-border bg-background px-4 py-3 xl:hidden">
             {navLinks.map((l) => (
@@ -103,6 +136,7 @@ export function SiteHeader() {
                 {l.label}
               </Link>
             ))}
+
             <button
               onClick={() => {
                 setOpen(false);
