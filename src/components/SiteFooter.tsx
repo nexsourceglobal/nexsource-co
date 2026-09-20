@@ -7,7 +7,7 @@ export function SiteFooter() {
   const { open } = useSourcing();
 
   return (
-   <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2.5">
@@ -75,16 +75,25 @@ export function SiteFooter() {
           <h4 className="text-xs font-bold uppercase tracking-[0.18em] opacity-70">Get Started</h4>
           <ul className="mt-4 space-y-2.5 text-sm opacity-85">
             <li>
-            <button onClick={() => open("footer")} className="hover:underline"> Start a Sourcing Project </button>
+              <button onClick={() => open("footer")} className="hover:underline">
+                Start a Sourcing Project
+              </button>
             </li>
-           <li>
- <a href={whatsappLink(Hello ${company.brand}, I would like to discuss a sourcing requirement.)} 
-target="_blank"
- rel="noopener noreferrer" 
-className="inline-flex items-center gap-1.5 hover:underline" > 
-<MessageCircle className="h-4 w-4" /> Talk on WhatsApp 
-</a>
- </li>
+            <li>
+              <button onClick={() => open("footer-quote")} className="hover:underline">
+                Request a Quote
+              </button>
+            </li>
+            <li>
+              <a
+                href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:underline"
+              >
+                <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+              </a>
+            </li>
             <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
