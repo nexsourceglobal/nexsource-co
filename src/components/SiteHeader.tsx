@@ -56,7 +56,7 @@ export function SiteHeader() {
   aria-label="Nex Source Global home"
 >
   <img
-    src="https://ibb.co/5WJLVQnF"
+    src="https://stimg.cardekho.com/images/uploadimages/1789898215458/WhatsApp-Image-2026-09-20-at-3.26.40-PM.jpeg"
     alt="Nex Source Global"
     className="h-12 w-auto object-contain"
   />
