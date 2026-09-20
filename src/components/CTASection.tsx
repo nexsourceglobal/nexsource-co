@@ -13,12 +13,12 @@ export function CTASection({ source }: { source: string }) {
           Tell us what you need. We&apos;ll help you explore the right sourcing path.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <button
-            onClick={() => open(source)}
-            className="inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 font-semibold text-primary-foreground transition-transform hover:scale-105"
-          >
-            Start a Sourcing Project <ArrowRight className="h-4 w-4" />
-          </button>
+       <button
+  onClick={() => open(source)}
+  className="inline-flex items-center gap-2 rounded-xl bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000]"
+>
+  Start a Sourcing Project <ArrowRight className="h-4 w-4" />
+</button>
           <a
             href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
             target="_blank"
