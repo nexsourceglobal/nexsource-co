@@ -10,15 +10,13 @@ export function SiteFooter() {
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-foreground font-display text-sm font-bold text-primary">
-              N
-            </span>
-            <span className="font-display text-[17px] font-bold leading-4">
-              NEX SOURCE
-              <span className="block text-[10px] font-semibold tracking-[0.28em] opacity-70">GLOBAL</span>
-            </span>
-          </div>
+         <div className="flex items-center">
+  <img
+    src="YAHAN_APNA_DIRECT_IMAGE_LINK_PASTE_KARO"
+    alt="Nex Source Global"
+    className="h-14 w-auto object-contain"
+  />
+</div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed opacity-80">
             Global sourcing, procurement and supply-chain support for businesses building reliable supplier networks.
           </p>
@@ -75,9 +73,12 @@ export function SiteFooter() {
           <h4 className="text-xs font-bold uppercase tracking-[0.18em] opacity-70">Get Started</h4>
           <ul className="mt-4 space-y-2.5 text-sm opacity-85">
             <li>
-              <button onClick={() => open("footer")} className="hover:underline">
-                Start a Sourcing Project
-              </button>
+              <button
+  onClick={() => open("footer")}
+  className="rounded-lg bg-[#D40000] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#B00000]"
+>
+  Start a Sourcing Project
+</button>
             </li>
             <li>
               <button onClick={() => open("footer-quote")} className="hover:underline">
