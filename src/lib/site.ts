@@ -103,10 +103,7 @@ export const regions = [
   "China",
   "Vietnam",
   "Thailand",
-  "Indonesia",
-  "Malaysia",
   "Taiwan",
-  "Mexico",
 ];
 
 export const serviceOptions = [
