@@ -286,12 +286,12 @@ function Home() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <button
-              onClick={() => open("home-mid-cta")}
-              className="inline-flex items-center gap-2 rounded-xl bg-brand px-7 py-3.5 font-semibold text-brand-foreground transition-transform hover:scale-105"
-            >
-              Start a Sourcing Project
-            </button>
+         <button 
+  onClick={() => open("home-mid-cta")} 
+  className="inline-flex items-center gap-2 rounded-xl bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000]" 
+> 
+  Start a Sourcing Project 
+</button>
             <a
               href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
               target="_blank"
