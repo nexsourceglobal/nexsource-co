@@ -75,7 +75,7 @@
   --border: oklch(0.915 0.01 240);
   --input: oklch(0.9 0.012 240);
   --ring: oklch(0.53 0.13 240);
-  --brand: oklch(0.53 0.13 240);
+  --brand: #D43C4C;
   --brand-foreground: oklch(0.99 0.004 240);
   --chart-1: oklch(0.24 0.05 252);
   --chart-2: oklch(0.53 0.13 240);
