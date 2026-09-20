@@ -277,7 +277,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-primary text-primary-foreground">
+     <section className="border-t border-border bg-[#EFF4F8] text-foreground">
         <div className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Send us your requirement today</h2>
