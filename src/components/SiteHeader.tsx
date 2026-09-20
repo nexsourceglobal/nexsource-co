@@ -30,7 +30,7 @@ export function SiteHeader() {
   return (
     <div className="sticky top-0 z-50">
       {bar && (
-        <div className="bg-primary text-primary-foreground">
+        <div className="bg-[#D40000] text-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 text-xs sm:px-6">
             <p className="truncate">
               Global sourcing support across Asia &amp; emerging manufacturing markets
