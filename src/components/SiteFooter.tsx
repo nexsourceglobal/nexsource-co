@@ -12,7 +12,7 @@ export function SiteFooter() {
         <div className="lg:col-span-2">
          <div className="flex items-center">
   <img
-    src="YAHAN_APNA_DIRECT_IMAGE_LINK_PASTE_KARO"
+    src="https://stimg.cardekho.com/images/uploadimages/1789898215458/WhatsApp-Image-2026-09-20-at-3.26.40-PM.jpeg"
     alt="Nex Source Global"
     className="h-14 w-auto object-contain"
   />
