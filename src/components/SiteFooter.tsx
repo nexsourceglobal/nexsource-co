@@ -18,7 +18,7 @@ export function SiteFooter() {
               NEX SOURCE
               <span className="block text-[10px] font-semibold tracking-[0.28em] opacity-70">GLOBAL</span>
             </span>
-          </div> isme logo change krna hai
+          </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed opacity-80">
             Global sourcing, procurement and supply-chain support for businesses building reliable supplier networks.
           </p>
