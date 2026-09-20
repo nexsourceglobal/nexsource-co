@@ -50,15 +50,17 @@ export function SiteHeader() {
 
       <header className="border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 sm:px-6">
-          <Link to="/" className="flex items-center gap-2.5" aria-label="Nex Source Global home">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary font-display text-sm font-bold text-primary-foreground">
-              N
-            </span>
-            <span className="font-display text-[17px] font-bold leading-4 tracking-tight">
-              NEX SOURCE
-              <span className="block text-[10px] font-semibold tracking-[0.28em] text-muted-foreground">GLOBAL</span>
-            </span>
-          </Link>
+        <Link
+  to="/"
+  className="flex items-center"
+  aria-label="Nex Source Global home"
+>
+  <img
+    src="https://ibb.co/5WJLVQnF"
+    alt="Nex Source Global"
+    className="h-12 w-auto object-contain"
+  />
+</Link>
 
           <nav className="hidden items-center gap-0.5 xl:flex">
             {navLinks.map((l) => (
