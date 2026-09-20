@@ -73,12 +73,7 @@ export function SiteFooter() {
           <h4 className="text-xs font-bold uppercase tracking-[0.18em] opacity-70">Get Started</h4>
           <ul className="mt-4 space-y-2.5 text-sm opacity-85">
             <li>
-              <button
-  onClick={() => open("footer")}
-  className="rounded-lg bg-[#D40000] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#B00000]"
->
-  Start a Sourcing Project
-</button>
+            <button onClick={() => open("footer")} className="hover:underline"> Start a Sourcing Project </button>
             </li>
             <li>
               <button onClick={() => open("footer-quote")} className="hover:underline">
