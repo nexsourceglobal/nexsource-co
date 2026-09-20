@@ -158,9 +158,12 @@ function Home() {
               </li>
             ))}
           </ul>
-          <Link to="/about" className="mt-7 inline-flex items-center gap-1.5 font-semibold text-accent-foreground hover:underline">
-            Discover Nex Source Global <ArrowRight className="h-4 w-4" />
-          </Link>
+         <Link
+  to="/about"
+  className="mt-7 inline-flex items-center gap-1.5 font-semibold text-[#D40000] hover:underline"
+>
+  Discover Nex Source Global <ArrowRight className="h-4 w-4" />
+</Link>
         </div>
       </section>
 
