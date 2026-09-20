@@ -105,12 +105,12 @@ function Home() {
             scalable sourcing networks.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <button
-              onClick={() => open("home-hero")}
-              className="inline-flex items-center gap-2 rounded-xl bg-brand px-7 py-3.5 font-semibold text-brand-foreground transition-transform hover:scale-105"
-            >
-              Start a Sourcing Project <ArrowRight className="h-4 w-4" />
-            </button>
+           <button 
+  onClick={() => open("home-hero")} 
+  className="inline-flex items-center gap-2 rounded-xl bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000]" 
+> 
+  Start a Sourcing Project <ArrowRight className="h-4 w-4" /> 
+</button>
             <Link
               to="/services"
               className="inline-flex items-center gap-2 rounded-xl border border-primary-foreground/30 px-7 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
