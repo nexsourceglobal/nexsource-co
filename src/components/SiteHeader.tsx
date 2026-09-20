@@ -61,12 +61,6 @@ export function SiteHeader() {
     className="h-12 w-auto object-contain"
   />
 </Link>
-            </span>
-            <span className="font-display text-[17px] font-bold leading-4 tracking-tight">
-              NEX SOURCE
-              <span className="block text-[10px] font-semibold tracking-[0.28em] text-muted-foreground">GLOBAL</span>
-            </span>
-          </Link>
 
           <nav className="hidden items-center gap-0.5 xl:flex">
             {navLinks.map((l) => (
