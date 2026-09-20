@@ -82,16 +82,16 @@ export function SiteFooter() {
                 Request a Quote
               </button>
             </li>
-            <li>
-              <a
-                href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 hover:underline"
-              >
-                <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
-              </a>
-            </li>
+         <li>
+  <a
+    href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-1.5 rounded-lg bg-[#D40000] px-4 py-2 text-white transition-colors hover:bg-[#B00000]"
+  >
+    <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+  </a>
+</li>
             <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
