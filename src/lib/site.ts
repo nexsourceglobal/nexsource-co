@@ -2,7 +2,7 @@ export const company = {
   name: "Nex Source Global Pvt. Limited",
   brand: "Nex Source Global",
   domain: "https://nexsource.co",
-  email: "info@nexsource.com",
+  email: "info@nexsource.co",
   phone: "+91 96231 32257",
   phoneRaw: "+919623132257",
   whatsapp: "919623132257",
@@ -79,17 +79,14 @@ export const services = [
 ];
 
 export const industries = [
-  "Industrial Components",
-  "Automotive",
-  "Engineering Products",
-  "Consumer Products",
-  "Packaging",
-  "Textiles & Apparel",
-  "Furniture & Lifestyle",
-  "Electrical & Electronics",
-  "Construction Materials",
-  "Machinery & Equipment",
-  "Custom Manufacturing",
+  "Home & Living",
+  "Kitchenware",
+  "Wellness & Personal Care",
+  "Corporate Gifting",
+  "Lifestyle Accessories",
+  "Outdoor & Travel",
+  "Retail Merchandise",
+  "Private Label Product",
 ];
 
 export const process = [
