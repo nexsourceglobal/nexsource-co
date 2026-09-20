@@ -58,7 +58,7 @@ export function SiteHeader() {
   <img
     src="https://stimg.cardekho.com/images/uploadimages/1789898215458/WhatsApp-Image-2026-09-20-at-3.26.40-PM.jpeg"
     alt="Nex Source Global"
-    className="h-16 w-auto object-contain"
+    className="h-20 w-auto object-contain"
   />
 </Link>
 
