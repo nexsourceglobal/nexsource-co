@@ -10,7 +10,7 @@ export function SiteFooter() {
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5">
         <div className="lg:col-span-2">
-         <div className="flex items-center">
+       <div className="rounded-lg bg-primary p-3">
   <img
     src="https://stimg.cardekho.com/images/uploadimages/1789898215458/WhatsApp-Image-2026-09-20-at-3.26.40-PM.jpeg"
     alt="Nex Source Global"
