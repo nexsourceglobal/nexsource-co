@@ -50,11 +50,9 @@ export function SiteHeader() {
 
       <header className="border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 sm:px-6">
-        <img
-  src="/logo.png"
-  alt="Nex Source Global"
-  className="h-10 w-auto object-contain"
-/>
+      <Link to="/" className="flex items-center gap-2.5" aria-label="Nex Source Global home">
+            <img src="/logo.png" alt="Nex Source Global" className="h-10 w-auto object-contain" />
+          </Link>
             </span>
             <span className="font-display text-[17px] font-bold leading-4 tracking-tight">
               NEX SOURCE
