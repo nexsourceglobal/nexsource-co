@@ -291,18 +291,18 @@ function Home() {
   className="inline-flex items-center gap-2 rounded-xl bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000]" 
 > 
   Start a Sourcing Project 
-</button>
-            <a
+    <a
               href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-primary-foreground/30 px-7 py-3.5 font-semibold transition-colors hover:bg-primary-foreground/10"
             >
-            </a> <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+              <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
             </a>
           </div>
         </div>
       </section>
+
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
