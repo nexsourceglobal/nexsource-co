@@ -45,8 +45,8 @@ function HowWeWork() {
         <ol className="relative space-y-6 border-l border-border pl-8">
           {process.map((p) => (
             <li key={p.no} className="relative">
-              <span className="absolute -left-[41px] flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-                {p.no}
+            <span className="absolute -left-[41px] flex h-8 w-8 items-center justify-center rounded-full bg-[#D40000] text-xs font-bold text-white">           
+              {p.no}
               </span>
               <div className="rounded-2xl border border-border bg-card p-6">
                 <h2 className="text-lg font-bold">{p.title}</h2>
