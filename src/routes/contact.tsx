@@ -145,9 +145,12 @@ function Contact() {
                   {errors["message"] && <span className="mt-1 block text-xs text-destructive">{errors["message"]}</span>}
                 </label>
               </div>
-              <button type="submit" className="mt-6 w-full rounded-xl bg-primary px-6 py-3.5 font-semibold text-primary-foreground">
-                Send message
-              </button>
+           <button
+  type="submit"
+  className="mt-6 w-full rounded-xl bg-[#D40000] px-6 py-3.5 font-semibold text-white transition-colors hover:bg-[#B00000]"
+>
+  Send message
+</button>
               <button
                 type="button"
                 onClick={() => open("contact-page")}
@@ -191,14 +194,14 @@ function Contact() {
                 </span>
               </li>
             </ul>
-            <a
-              href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground"
-            >
-              <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
-            </a>
+    <a
+  href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#D40000] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#B00000]"
+>
+  <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+</a>
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-border">
