@@ -10,7 +10,7 @@ import {
   Search,
   ShieldCheck,
 } from "lucide-react";
-import heroImg from "@/assets/hero-sourcing.jpg";
+import heroImg from "@/assets/hero-sourcing.png";
 import aboutImg from "@/assets/about-team.jpg";
 import mapImg from "@/assets/network-map.jpg";
 import industriesImg from "@/assets/industries.jpg";
