@@ -84,43 +84,54 @@ function Home() {
 
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
-        <img
-          src={heroImg}
-          alt="Container terminal at dusk with cargo ship and stacked shipping containers"
-          width={1600}
-          height={912}
-          className="absolute inset-0 h-full w-full object-cover opacity-35"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/40" />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-32">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] opacity-75">Global Sourcing &amp; Procurement</p>
-          <h1 className="mt-5 max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-            Source smarter.
-            <br />
-            Build better supply chains.
-          </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed opacity-85 sm:text-lg">
-            From supplier discovery to procurement coordination, {company.brand} helps businesses build reliable, competitive and
-            scalable sourcing networks.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-           <button 
-  onClick={() => open("home-hero")} 
-  className="inline-flex items-center gap-2 rounded-xl bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000]" 
-> 
-  Start a Sourcing Project <ArrowRight className="h-4 w-4" /> 
-</button>
-            <Link
-              to="/services"
-              className="inline-flex items-center gap-2 rounded-xl border border-primary-foreground/30 px-7 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
-            >
-              Explore Our Services
-            </Link>
-          </div>
-        </div>
-      </section>
+     <section
+  className="relative isolate overflow-hidden bg-cover bg-center bg-no-repeat text-primary-foreground"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        90deg,
+        rgba(5, 25, 45, 0.92) 0%,
+        rgba(5, 25, 45, 0.72) 45%,
+        rgba(5, 25, 45, 0.25) 100%
+      ),
+      url(${heroImg})
+    `,
+  }}
+>
+  <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-32">
+    <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/80">
+      Global Sourcing &amp; Procurement
+    </p>
 
+    <h1 className="mt-5 max-w-3xl font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+      Source smarter.
+      <br />
+      Build better supply chains.
+    </h1>
+
+    <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
+      From supplier discovery to procurement coordination, {company.brand} helps
+      businesses build reliable, competitive and scalable sourcing networks.
+    </p>
+
+    <div className="mt-9 flex flex-wrap gap-3">
+      <button
+        onClick={() => open("home-hero")}
+        className="inline-flex items-center gap-2 rounded-xl bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-transform hover:scale-105 hover:bg-[#B00000]"
+      >
+        Start a Sourcing Project
+        <ArrowRight className="h-4 w-4" />
+      </button>
+
+      <Link
+        to="/services"
+        className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-7 py-3.5 font-semibold text-white transition-colors hover:bg-white/10"
+      >
+        Explore Our Services
+      </Link>
+    </div>
+  </div>
+</section>
       <section className="border-b border-border bg-background">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
           <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">Built Around Your Supply Chain</h2>
