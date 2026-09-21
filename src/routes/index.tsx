@@ -296,7 +296,7 @@ function Home() {
   href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
   target="_blank"
   rel="noopener noreferrer"
-  className="inline-flex items-center gap-2 rounded-xl border border-[#D40000] bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-colors hover:bg-[#B00000]"
+  className="inline-flex items-center gap-2 rounded-xl border border-border bg-white px-7 py-3.5 font-semibold text-foreground transition-colors hover:bg-gray-100"
 >
   <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
 </a>
