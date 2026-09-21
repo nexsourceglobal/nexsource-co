@@ -7,7 +7,7 @@ export function SiteFooter() {
   const { open } = useSourcing();
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#D40000] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2.5">
