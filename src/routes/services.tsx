@@ -45,12 +45,12 @@ function Services() {
               <p className="mt-3 text-sm font-semibold text-foreground">{s.short}</p>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{s.detail}</p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <button
-                  onClick={() => open(`service-${s.title}`)}
-                  className="rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
-                >
-                  Start your project
-                </button>
+<button
+  onClick={() => open(`service-${s.title}`)}
+  className="rounded-xl bg-[#D40000] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#B00000]"
+>
+  Start your project
+</button>
                 <a
                   href={whatsappLink(
                     `Hello ${company.brand}, I am interested in your ${s.title} service. I would like to discuss my requirement.`,
