@@ -292,14 +292,14 @@ function Home() {
 > 
   Start a Sourcing Project 
             </button>
-    <a
-              href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-primary-foreground/30 px-7 py-3.5 font-semibold transition-colors hover:bg-primary-foreground/10"
-            >
-              <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
-            </a>
+<a
+  href={whatsappLink(`Hello ${company.brand}, I would like to discuss a sourcing requirement.`)}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 rounded-xl border border-[#D40000] bg-[#D40000] px-7 py-3.5 font-semibold text-white transition-colors hover:bg-[#B00000]"
+>
+  <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
+</a>
           </div>
         </div>
       </section>
