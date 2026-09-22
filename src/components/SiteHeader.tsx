@@ -56,7 +56,7 @@ export function SiteHeader() {
   aria-label="Nex Source Global home"
 >
   <img
-    src="https://ibb.co/Q7hSzWTt"
+    src="https://i.ibb.co/MyKwWztQ/Nex-Source-Exact-Logo.jpg"
     alt="Nex Source Global"
     className="h-14 w-[200px] object-contain object-left"
   />
