@@ -3,9 +3,9 @@ export const company = {
   brand: "Nex Source Global",
   domain: "https://nexsource.co",
   email: "info@nexsource.co",
-  phone: "+91 96231 32257",
-  phoneRaw: "+919623132257",
-  whatsapp: "919623132257",
+  phone: "+91 8551035440",
+  phoneRaw: "+918551035440",
+  whatsapp: "918551035440",
   contactPerson: "Hiteshree Fichadia",
   address: {
     line1: "B64 / Block B",
