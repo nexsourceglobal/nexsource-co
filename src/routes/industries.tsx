@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import industriesImg from "@/assets/industries.jpg";
 import { PageHero, SectionHeading } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
@@ -31,7 +32,8 @@ function Industries() {
         eyebrow="Industries"
         title="Industries we can support"
         text="These are the categories our sourcing process is built to handle. Every enquiry is confirmed against your specific product, quality level and volumes before we commit to a scope."
-      />
+        image={heroImg}
+        />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
