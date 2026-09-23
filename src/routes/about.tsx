@@ -37,11 +37,12 @@ const values = [
 function About() {
   return (
     <>
-      <PageHero
-        eyebrow="About Us"
-        title="A sourcing partner built around clear requirements"
-        text="Nex Source Global connects businesses with capable manufacturers and supports the procurement work that follows — from quotation to dispatch preparation."
-      />
+    <PageHero
+  eyebrow="About Us"
+  title="A sourcing partner built around clear requirements"
+  text="Nex Source Global connects businesses with capable manufacturers and supports the procurement work that follows — from quotation to dispatch preparation."
+  image={heroImg}
+/>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <SectionHeading eyebrow="Company Information" title="Nex Source Global Pvt. Limited" />
