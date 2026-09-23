@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import { PageHero } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
 import { news } from "@/lib/site";
@@ -30,6 +31,7 @@ function News() {
         eyebrow="News"
         title="Company and industry updates"
         text="Updates from our sourcing desk and notes on what we are seeing in manufacturing markets."
+         image={heroImg}
       />
 
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:py-20">
