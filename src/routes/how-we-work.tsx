@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import inspectionImg from "@/assets/inspection.jpg";
 import { PageHero, SectionHeading } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
@@ -39,6 +40,7 @@ function HowWeWork() {
         eyebrow="How We Work"
         title="A clear process, from requirement to dispatch"
         text="Sourcing goes wrong when steps are skipped. We follow the same six stages on every project, so decisions are made on comparable information."
+         image={heroImg}
       />
 
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:py-20">
