@@ -18,8 +18,6 @@ export function PageHero({
         image
           ? {
               backgroundImage: `
-            linear-gradient(
-  90deg,
 linear-gradient(
   90deg,
   rgba(5, 25, 45, 0.92) 0%,
