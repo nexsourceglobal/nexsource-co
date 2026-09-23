@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2, Mail, MapPin, MessageCircle, Phone, User } from "lucide-react";
 import { useState } from "react";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import { PageHero, SectionHeading } from "@/components/Section";
 import { useSourcing } from "@/components/SourcingProvider";
 import { company, whatsappLink } from "@/lib/site";
@@ -67,6 +68,7 @@ function Contact() {
         eyebrow="Contact"
         title="Let's talk about your next sourcing requirement."
         text="Send us a short brief and our sourcing team will come back to you with the next step."
+         image={heroImg}
       />
 
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:py-20">
