@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, User } from "lucide-react";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import aboutImg from "@/assets/about-team.jpg";
 import inspectionImg from "@/assets/inspection.jpg";
 import { PageHero, SectionHeading } from "@/components/Section";
