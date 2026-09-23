@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle } from "lucide-react";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import { PageHero } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
 import { useSourcing } from "@/components/SourcingProvider";
@@ -30,12 +31,12 @@ function Services() {
 
   return (
     <>
-      <PageHero
-        eyebrow="Services"
-        title="Sourcing services that cover the whole requirement"
-        text="Each service can run on its own or as part of a complete sourcing project. Scope, timelines and deliverables are always agreed before work starts."
-      />
-
+     <PageHero
+  eyebrow="Services"
+  title="Sourcing services that cover the whole requirement"
+  text="Each service can run on its own or as part of a complete sourcing project. Scope, timelines and deliverables are always agreed before work starts."
+  image={heroImg}
+/>
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
         <div className="grid gap-6 lg:grid-cols-2">
           {services.map((s) => (
