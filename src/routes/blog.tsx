@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import heroImg from "@/assets/hero-sourcing.jpg";
 import { PageHero } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
 import { articles } from "@/lib/site";
@@ -32,6 +33,7 @@ function Blog() {
         eyebrow="Insights"
         title="Sourcing and procurement, explained simply"
         text="Short, practical articles for buyers, procurement teams and business owners working with manufacturers."
+         image={heroImg}
       />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
