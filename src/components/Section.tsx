@@ -20,9 +20,11 @@ export function PageHero({
               backgroundImage: `
             linear-gradient(
   90deg,
-  rgba(100, 0, 0, 0.92) 0%,
-  rgba(160, 0, 0, 0.72) 45%,
-  rgba(212, 0, 0, 0.25) 100%
+linear-gradient(
+  90deg,
+  rgba(5, 25, 45, 0.92) 0%,
+  rgba(5, 25, 45, 0.72) 45%,
+  rgba(5, 25, 45, 0.25) 100%
 ),
                 url(${image})
               `,
