@@ -53,11 +53,11 @@ export function SiteHeader() {
         <Link
   to="/"
   className="flex items-center"
-  aria-label="Nex Source Global home"
+  aria-label="Nex Source home"
 >
   <img
     src="https://i.ibb.co/MyKwWztQ/Nex-Source-Exact-Logo.jpg"
-    alt="Nex Source Global"
+    alt="Nex Source"
     className="h-14 w-[200px] object-contain object-left"
   />
 </Link>
