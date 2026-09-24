@@ -9,13 +9,13 @@ import { company, services, whatsappLink } from "@/lib/site";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Sourcing & Procurement Services — Nex Source Global" },
+      { title: "Sourcing & Procurement Services — Nex Source" },
       {
         name: "description",
         content:
           "Global sourcing, supplier identification and evaluation, procurement support, supplier verification, quality coordination, production follow-up and custom sourcing projects.",
       },
-      { property: "og:title", content: "Sourcing & Procurement Services — Nex Source Global" },
+      { property: "og:title", content: "Sourcing & Procurement Services — Nex Source" },
       { property: "og:description", content: "Eight sourcing services covering discovery, evaluation, procurement and production follow-up." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/services" },
