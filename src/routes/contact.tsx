@@ -9,13 +9,13 @@ import { company, whatsappLink } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Nex Source Global — Talk to Our Sourcing Team" },
+      { title: "Contact Nex Source — Talk to Our Sourcing Team" },
       {
         name: "description",
         content:
-          "Contact Nex Source Global in New Delhi for global sourcing and procurement support. Email info@nexsource.com, call +91 96231 32257 or send your requirement online.",
+          "Contact Nex Source in New Delhi for global sourcing and procurement support. Email info@nexsource.com, call +91 96231 32257 or send your requirement online.",
       },
-      { property: "og:title", content: "Contact Nex Source Global" },
+      { property: "og:title", content: "Contact Nex Source" },
       { property: "og:description", content: "Let's talk about your next sourcing requirement." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/contact" },
