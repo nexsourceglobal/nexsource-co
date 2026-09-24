@@ -22,13 +22,13 @@ import { articles, company, industries, process, regions, services, whatsappLink
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nex Source Global — Source Smarter, Build Better Supply Chains" },
+      { title: "Nex Source — Source Smarter, Build Better Supply Chains" },
       {
         name: "description",
         content:
           "Global sourcing and procurement support: supplier discovery, evaluation, verification, quality coordination and production follow-up for businesses building reliable supplier networks.",
       },
-      { property: "og:title", content: "Nex Source Global — Source Smarter, Build Better Supply Chains" },
+      { property: "og:title", content: "Nex Source — Source Smarter, Build Better Supply Chains" },
       {
         property: "og:description",
         content: "Supplier discovery, evaluation, procurement support and production follow-up for growing businesses.",
