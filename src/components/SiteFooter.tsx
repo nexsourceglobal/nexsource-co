@@ -10,15 +10,17 @@ export function SiteFooter() {
    <footer className="bg-[#D40000] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-foreground font-display text-sm font-bold text-primary">
-              N
-            </span>
-            <span className="font-display text-[17px] font-bold leading-4">
-              NEX SOURCE
-              <span className="block text-[10px] font-semibold tracking-[0.28em] opacity-70">GLOBAL</span>
-            </span>
-          </div>
+        <Link
+  to="/"
+  className="inline-flex items-center"
+  aria-label="Nex Source home"
+>
+  <img
+    src="https://i.ibb.co/MyKwWztQ/Nex-Source-Exact-Logo.jpg"
+    alt="Nex Source Global"
+    className="h-14 w-[200px] object-contain object-left"
+  />
+</Link>
           <p className="mt-5 max-w-sm text-sm leading-relaxed opacity-80">
             Global sourcing, procurement and supply-chain support for businesses building reliable supplier networks.
           </p>
