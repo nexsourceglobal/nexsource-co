@@ -8,13 +8,13 @@ import { industries, regions } from "@/lib/site";
 export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
-      { title: "Industries We Can Support — Nex Source Global" },
+      { title: "Industries We Can Support — Nex Source" },
       {
         name: "description",
         content:
           "Sourcing support across industrial components, automotive, engineering products, consumer goods, packaging, textiles, electricals, construction materials and custom manufacturing.",
       },
-      { property: "og:title", content: "Industries We Can Support — Nex Source Global" },
+      { property: "og:title", content: "Industries We Can Support — Nex Source" },
       { property: "og:description", content: "Product categories our sourcing process is built to handle." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/industries" },
