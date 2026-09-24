@@ -10,13 +10,13 @@ import { company, process } from "@/lib/site";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Nex Source Global — Sourcing & Procurement Partner" },
+      { title: "About Nex Source — Sourcing & Procurement Partner" },
       {
         name: "description",
         content:
-          "Nex Source Global is a global sourcing and procurement company based in New Delhi, India, supporting businesses with supplier discovery, evaluation and production coordination.",
+          "Nex Source is a global sourcing and procurement company based in New Delhi, India, supporting businesses with supplier discovery, evaluation and production coordination.",
       },
-      { property: "og:title", content: "About Nex Source Global" },
+      { property: "og:title", content: "About Nex Source" },
       { property: "og:description", content: "Who we are, what we do and how we work as your sourcing partner." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/about" },
@@ -40,12 +40,12 @@ function About() {
     <PageHero
   eyebrow="About Us"
   title="A sourcing partner built around clear requirements"
-  text="Nex Source Global connects businesses with capable manufacturers and supports the procurement work that follows — from quotation to dispatch preparation."
+  text="Nex Source connects businesses with capable manufacturers and supports the procurement work that follows — from quotation to dispatch preparation."
   image={heroImg}
 />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
-        <SectionHeading eyebrow="Company Information" title="Nex Source Global Pvt. Limited" />
+        <SectionHeading eyebrow="Company Information" title="Nex Source Pvt. Limited" />
         <div className="mt-8 grid gap-6 lg:grid-cols-3">
           <dl className="rounded-2xl border border-border bg-card p-7 lg:col-span-2">
             <div className="grid gap-5 sm:grid-cols-2">
