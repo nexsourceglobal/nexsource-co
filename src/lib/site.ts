@@ -1,6 +1,6 @@
 export const company = {
-  name: "Nex Source Global Pvt. Limited",
-  brand: "Nex Source Global",
+  name: "Nex Source Pvt. Limited",
+  brand: "Nex Source ",
   domain: "https://nexsource.co",
   email: "info@nexsource.co",
   phone: "+91 8551035440",
