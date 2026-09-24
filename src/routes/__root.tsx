@@ -82,13 +82,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nex Source Global — Global Sourcing & Procurement Partner" },
+      { title: "Nex Source — Global Sourcing & Procurement Partner" },
       {
         name: "description",
         content:
-          "Nex Source Global helps businesses discover, evaluate and coordinate with manufacturers across Asia and emerging manufacturing markets.",
+          "Nex Source helps businesses discover, evaluate and coordinate with manufacturers across Asia and emerging manufacturing markets.",
       },
-      { property: "og:site_name", content: "Nex Source Global" },
+      { property: "og:site_name", content: "Nex Source" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
