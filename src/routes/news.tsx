@@ -7,13 +7,13 @@ import { news } from "@/lib/site";
 export const Route = createFileRoute("/news")({
   head: () => ({
     meta: [
-      { title: "News & Company Updates — Nex Source Global" },
+      { title: "News & Company Updates — Nex Source" },
       {
         name: "description",
         content:
-          "Company updates, industry news and sourcing notes from Nex Source Global. Sample content is clearly marked until official announcements are published.",
+          "Company updates, industry news and sourcing notes from Nex Source. Sample content is clearly marked until official announcements are published.",
       },
-      { property: "og:title", content: "News & Company Updates — Nex Source Global" },
+      { property: "og:title", content: "News & Company Updates — Nex Source" },
       { property: "og:description", content: "Company updates, industry news and sourcing notes." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/news" },
