@@ -7,13 +7,13 @@ import { articles } from "@/lib/site";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Sourcing Insights & Articles — Nex Source Global" },
+      { title: "Sourcing Insights & Articles — Nex Source" },
       {
         name: "description",
         content:
-          "Practical articles on global sourcing, procurement, supplier management, quality and supply-chain planning from the Nex Source Global team.",
+          "Practical articles on global sourcing, procurement, supplier management, quality and supply-chain planning from the Nex Source team.",
       },
-      { property: "og:title", content: "Sourcing Insights & Articles — Nex Source Global" },
+      { property: "og:title", content: "Sourcing Insights & Articles — Nex Source" },
       { property: "og:description", content: "Practical reading on sourcing, procurement, suppliers and quality." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/blog" },
