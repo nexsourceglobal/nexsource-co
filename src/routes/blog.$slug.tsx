@@ -10,12 +10,12 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ params, loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Article unavailable — Nex Source Global" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Article unavailable — Nex Source" }, { name: "robots", content: "noindex" }] };
     }
     const a = loaderData.article;
     return {
       meta: [
-        { title: `${a.title} — Nex Source Global` },
+        { title: `${a.title} — Nex Source` },
         { name: "description", content: a.excerpt },
         { property: "og:title", content: a.title },
         { property: "og:description", content: a.excerpt },
