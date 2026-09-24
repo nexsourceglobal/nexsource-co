@@ -8,7 +8,7 @@ import { process } from "@/lib/site";
 export const Route = createFileRoute("/how-we-work")({
   head: () => ({
     meta: [
-      { title: "How We Work — Our Sourcing Process | Nex Source Global" },
+      { title: "How We Work — Our Sourcing Process | Nex Source" },
       {
         name: "description",
         content:
