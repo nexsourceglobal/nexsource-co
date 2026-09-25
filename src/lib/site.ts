@@ -216,7 +216,7 @@ export type NewsItem = {
 export const news: NewsItem[] = [
   {
     slug: "sourcing-desk-expansion",
-    title: "Nex Source Global expands its sourcing desk capacity",
+    title: "Nex Source expands its sourcing desk capacity",
     category: "Company Update",
     date: "20 August 2026",
     summary:
