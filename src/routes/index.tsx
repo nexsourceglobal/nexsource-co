@@ -160,7 +160,7 @@ function Home() {
           <SectionHeading
             eyebrow="Who We Are"
             title="Your Partner Beyond the Factory Gate"
-            text="Nex Source Global works between buyers and manufacturing ecosystems. We translate a product requirement into a shortlist of capable suppliers, then stay involved through quotation, sampling, production and dispatch preparation."
+            text="Nex Source works between buyers and manufacturing ecosystems. We translate a product requirement into a shortlist of capable suppliers, then stay involved through quotation, sampling, production and dispatch preparation."
           />
           <ul className="mt-7 grid gap-3 sm:grid-cols-2">
             {["Supplier discovery", "Supplier evaluation", "Procurement coordination", "Quality awareness", "Production follow-up", "Supply-chain visibility"].map((i) => (
@@ -173,7 +173,7 @@ function Home() {
   to="/about"
   className="mt-7 inline-flex items-center gap-1.5 font-semibold text-[#D40000] hover:underline"
 >
-  Discover Nex Source Global <ArrowRight className="h-4 w-4" />
+  Discover Nex Source <ArrowRight className="h-4 w-4" />
 </Link>
         </div>
       </section>
